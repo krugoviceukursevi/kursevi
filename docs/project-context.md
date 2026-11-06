@@ -31,8 +31,10 @@ There is no local Supabase — everything runs against the linked remote project
 `SUPABASE_ACCESS_TOKEN` from `.env.local` (via `dotenv-cli`), which overrides whatever
 account `supabase login` last saved on the machine. Bare `npx supabase` uses that global
 login — on a machine that also works on other clients' projects it is someone else's
-account, which is how this repo ended up linked to a dead project. The pooler host is
-`aws-1-eu-west-1`, not `aws-0-…`.
+account, which is how this repo ended up linked to a dead project. The pooler host for
+the Krugovi project (`ppcewxpghywjlicdxqdq`) is `aws-0-eu-west-1`; the first client's was
+`aws-1-…`. A wrong one answers _"tenant/user … not found"_. The `db.<ref>.supabase.co`
+host is IPv6-only and does not resolve on most networks — use the pooler.
 
 ---
 
@@ -2665,6 +2667,32 @@ course-scoped page, add it there or it is URL-only.
 
 - **The auth backdrop drifts circles, not squares** — the brand is _Krugovi_ and the logo a
   disc. Painted with `brand` (the fill colour) rather than `primary`, since it is decoration.
+
+### Data imported from Krugovi's old platform (`npm run migrate:old`)
+
+- **The courses, students, purchases, progress and certificates came from the client's
+  previous app** (a separate Supabase project), via `scripts/migrate-from-old.mjs`. Dry run
+  by default, `-- --apply` to write. It reads the old project only, never deletes, and is
+  re-runnable: every row keeps its old uuid, so a second run inserts what is new and
+  updates what changed. A dry run after an apply reading "unchanged" everywhere is the
+  check. Re-run it at cutover if the old app took data after the first import.
+
+- **Passwords survived because the hash was copied, not the password.**
+  `auth.admin.createUser({ id, password_hash })` accepts a bcrypt hash; no API _returns_
+  one, so the script reads `auth.users.encrypted_password` over Postgres
+  (`OLD_SUPABASE_CONNECTION_STRING`, which is the only reason `pg` is a dev dependency).
+  Verified: all 20 hashes byte-identical. A user created without the hash would not get it
+  on a later run, which is why `--apply` refuses without one.
+
+- **Decisions in the mapping:** the old admin account was not imported (nor its one
+  purchase); quizzes without a pass mark got 70%; course duration and ratings were dropped;
+  old tags became categories (one typo fixed); purchases kept their old `PR-…` references,
+  because a pending one may already be quoted on a bank transfer; certificates got new
+  `CERT-2026-NNNN` numbers in issue order, with the original issue date.
+
+- **Unfinished progress on a module without a quiz would not be imported**, because our
+  trigger makes such a row complete merely by existing. None of the old rows hit this, but
+  the rule stays in the script.
 
 ### Bot protection on sign-up: a honeypot only
 

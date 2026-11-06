@@ -1,6 +1,6 @@
 {
   "name": "courses-platform",
-  "version": "1.50.1",
+  "version": "1.50.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -19,6 +19,7 @@
     "db:seed": "node scripts/seed.mjs",
     "db:verify-rls": "node scripts/verify-teacher-rls.mjs",
     "make-admin": "node scripts/make-admin.mjs",
+    "migrate:old": "node --env-file=.env.local scripts/migrate-from-old.mjs",
     "versions:init": "node scripts/versions.mjs init",
     "versions:bump": "node scripts/versions.mjs bump",
     "prepare": "node scripts/versions.mjs install-hook"
@@ -65,6 +66,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.8",
     "eslint-config-prettier": "^10.1.8",
+    "pg": "^8.23.1",
     "prettier": "^3.9.6",
     "supabase": "^2.111.0",
     "typescript": "^5"
