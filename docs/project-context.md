@@ -2387,7 +2387,7 @@ course-scoped page, add it there or it is URL-only.
   admin uploaded, and stating dimensions we have not measured would be a guess; Facebook and
   LinkedIn fetch the image and read them. Only the default card declares 1200×630.
 
-- **The canonical origin is `SITE.url`** (for Krugovi still a placeholder, `https://www.krugovi.ba`, until a domain exists). A Vercel
+- **The canonical origin is `SITE.url`** (`https://www.krugovi.net` for Krugovi). A Vercel
   Production build without `NEXT_PUBLIC_SITE_URL` falls back to it rather than to the
   `*.vercel.app` alias. `next.config.ts` 301s the apex domain to `www`; Vercel itself
   handles HTTP → HTTPS.
@@ -2636,8 +2636,7 @@ course-scoped page, add it there or it is URL-only.
   first option of each run. Children are a flat array because MUI's Select does not look
   inside Fragments.
 
-- **Placeholders still in `brand/config.ts`, marked `TODO(krugovi)`:** `url` (no domain
-  yet — it is the production canonical fallback, so it must be real before launch),
+- **Placeholders still in `brand/config.ts`, marked `TODO(krugovi)`:**
   `contact.hours` and `service.replyTime` (carried over from Edubox), and
   `company.legalName` (set to "Krugovi"; must be the registered name, as it is the data
   controller in the privacy policy). `hero.jpg` is the client's own (abstract circles), used
@@ -2649,6 +2648,23 @@ course-scoped page, add it there or it is URL-only.
   an empty label; the token still works if an admin adds it back in the editor.
   `company.address` holds no country, because both legal texts append ", Bosna i
   Hercegovina" after it.
+
+- **The legal texts describe the centre, not only a platform.** The privacy policy opens by
+  saying what Krugovi is and covers the live-course application form (phone, company,
+  participants, note — data the contact form never collected); the terms say they govern
+  the online platform only, and that live courses and services are agreed separately. Names
+  still come through `{{site.name}}` / `{{company.*}}` placeholders, so the texts carry no
+  client name of their own. Changed in migration 0034 **and** in the Krugovi database rows,
+  which were still exactly the migration's text — a database whose admin has edited them
+  must not be overwritten.
+
+- **The starting blog posts got the same Serbian pass** (0035 and the database): "Šta je …"
+  in titles and headings, _projekat_ / _projektni menadžment_, _sajber bezbjednost_. Slugs
+  were left alone (`sta-je-projekt-menadzment`, `osnove-kiberneticke-bezbjednosti`), per the
+  rule that a published slug never follows a rename.
+
+- **The auth backdrop drifts circles, not squares** — the brand is _Krugovi_ and the logo a
+  disc. Painted with `brand` (the fill colour) rather than `primary`, since it is decoration.
 
 ### Bot protection on sign-up: a honeypot only
 

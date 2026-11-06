@@ -198,11 +198,11 @@ create policy "blog_images_admin_delete"
 insert into public.blog_posts
   (slug, title, excerpt, category, published_at, image_path, image_alt, content)
 values
-  ('sta-je-projekt-menadzment', 'Što je projekt menadžment? Vodič za početnike', 'Saznajte što je projekt menadžment, koje su njegove osnovne faze i zašto je ova vještina danas tražena u gotovo svakoj industriji.', 'Poslovanje', date '2026-06-01',
-   '/images/blog/projekt-menadzment.jpg', 'Tim koji planira projekt na bijeloj ploči',
-   $post$## Što je projekt menadžment?
+  ('sta-je-projekt-menadzment', 'Šta je projektni menadžment? Vodič za početnike', 'Saznajte šta je projektni menadžment, koje su njegove osnovne faze i zašto je ova vještina danas tražena u gotovo svakoj industriji.', 'Poslovanje', date '2026-06-01',
+   '/images/blog/projekt-menadzment.jpg', 'Tim koji planira projekat na bijeloj tabli',
+   $post$## Šta je projektni menadžment?
 
-Projekt menadžment je proces planiranja, organizovanja i vođenja resursa (ljudi, vremena, budžeta) kako bi se određeni cilj ostvario u zadatom roku. Bilo da se radi o izgradnji zgrade, lansiranju aplikacije ili organizaciji konferencije, svaki projekt prolazi kroz slične faze.
+Projektni menadžment je proces planiranja, organizovanja i vođenja resursa (ljudi, vremena, budžeta) kako bi se određeni cilj ostvario u zadatom roku. Bilo da se radi o izgradnji zgrade, lansiranju aplikacije ili organizaciji konferencije, svaki projekat prolazi kroz slične faze.
 
 ## Osnovne faze projekta
 
@@ -211,18 +211,18 @@ Većina projekata se odvija kroz pet ključnih faza:
 - **Iniciranje** – definisanje cilja i opsega projekta
 - **Planiranje** – izrada plana, budžeta i rasporeda
 - **Izvršenje** – realizacija zadataka od strane tima
-- **Praćenje i kontrola** – provjera da li se projekt odvija po planu
+- **Praćenje i kontrola** – provjera da li se projekat odvija po planu
 - **Zatvaranje** – finalna evaluacija i predaja rezultata
 
-## Zašto je projekt menadžment važna vještina?
+## Zašto je projektni menadžment važna vještina?
 
-Poslodavci sve više traže ljude koji znaju upravljati zadacima, rokovima i timovima – bez obzira na to da li je pozicija formalno vezana za menadžment. Osoba koja razumije osnove projekt menadžmenta lakše organizuje sopstveni rad, ali i doprinosi timu jasnijom komunikacijom i boljim planiranjem.
+Poslodavci sve više traže ljude koji znaju upravljati zadacima, rokovima i timovima – bez obzira na to da li je pozicija formalno vezana za menadžment. Osoba koja razumije osnove projektnog menadžmenta lakše organizuje sopstveni rad, ali i doprinosi timu jasnijom komunikacijom i boljim planiranjem.
 
 ## Popularni alati i metodologije
 
 Neki od najpoznatijih pristupa uključuju **Agile**, **Scrum** i **Waterfall** metodologiju. Svaka od njih ima svoje prednosti – Agile je fleksibilan i pogodan za timove koji rade u brzim ciklusima, dok je Waterfall linearniji pristup pogodan za projekte sa jasno definisanim koracima.
 
-## Kako početi učiti projekt menadžment?
+## Kako početi učiti projektni menadžment?
 
 Za početak nije potreban formalni sertifikat. Dovoljno je razumjeti osnovne pojmove, isprobati alate poput Trello-a ili Asane na manjim ličnim projektima, i postepeno graditi iskustvo kroz stvarne zadatke. Online kursevi su odličan način da se ova znanja steknu strukturisano i uz praktične primjere.$post$),
 
@@ -238,7 +238,7 @@ Jedna od najpoznatijih metoda je Pomodoro tehnika – rad u intervalima od 25 mi
 
 ## Metoda "pojedi žabu"
 
-Ova metoda se zasniva na ideji da prvo treba obaviti najteži ili najneprijatniji zadatak dana ("žabu"). Kada se on ukloni s liste, ostatak dana djeluje lakše, a osjećaj postignuća motiviše za daljnji rad.
+Ova metoda se zasniva na ideji da prvo treba obaviti najteži ili najneprijatniji zadatak dana ("žabu"). Kada se on ukloni s liste, ostatak dana djeluje lakše, a osjećaj postignuća motiviše za dalji rad.
 
 ## Eisenhowerova matrica
 
@@ -255,7 +255,7 @@ Ne postoji univerzalno rješenje – neki ljudi bolje funkcionišu uz kratke int
 
   ('kako-napisati-biznis-plan', 'Kako napisati biznis plan: osnove za početnike', 'Jednostavan vodič kroz ključne dijelove biznis plana – od analize tržišta do finansijske projekcije – za sve koji planiraju pokrenuti posao.', 'Poslovanje', date '2026-06-13',
    '/images/blog/biznis-plan.jpg', 'Osoba piše biznis plan u bilježnici',
-   $post$## Što je biznis plan i zašto je potreban?
+   $post$## Šta je biznis plan i zašto je potreban?
 
 Biznis plan je dokument koji opisuje ideju, ciljeve i strategiju jednog poslovnog poduhvata. Osim što pomaže u dobijanju investicija ili kredita, biznis plan služi i kao vodič samom poduzetniku – jasno definiše korake koje treba poduzeti da bi se ideja pretvorila u održiv posao.
 
@@ -264,7 +264,7 @@ Biznis plan je dokument koji opisuje ideju, ciljeve i strategiju jednog poslovno
 Dobar biznis plan obično sadrži sljedeće dijelove:
 
 - **Sažetak** – kratak pregled cijele ideje
-- **Opis proizvoda ili usluge** – što se tačno nudi tržištu
+- **Opis proizvoda ili usluge** – šta se tačno nudi tržištu
 - **Analiza tržišta** – ko su kupci i konkurencija
 - **Marketinška strategija** – kako će se privući kupci
 - **Operativni plan** – kako će posao funkcionirati svakodnevno
@@ -272,7 +272,7 @@ Dobar biznis plan obično sadrži sljedeće dijelove:
 
 ## Analiza tržišta i konkurencije
 
-Prije pokretanja bilo kojeg posla, važno je istražiti ko su potencijalni kupci i što konkurencija već nudi. Ovo pomaže da se pronađe prostor za diferencijaciju – nešto što će novi posao izdvojiti od ostalih na tržištu.
+Prije pokretanja bilo kojeg posla, važno je istražiti ko su potencijalni kupci i šta konkurencija već nudi. Ovo pomaže da se pronađe prostor za diferencijaciju – nešto što će novi posao izdvojiti od ostalih na tržištu.
 
 ## Finansijski dio plana
 
@@ -280,7 +280,7 @@ Finansijska projekcija ne mora biti savršena, ali treba realno prikazati očeki
 
 ## Zaključak
 
-Biznis plan ne mora biti dugačak da bi bio efikasan – bitno je da jasno odgovori na pitanja što se nudi, kome, i kako će posao biti profitabilan. Čak i jednostavan plan na nekoliko stranica može biti odličan početak za svaki poduhvat.$post$),
+Biznis plan ne mora biti dugačak da bi bio efikasan – bitno je da jasno odgovori na pitanja šta se nudi, kome, i kako će posao biti profitabilan. Čak i jednostavan plan na nekoliko stranica može biti odličan početak za svaki poduhvat.$post$),
 
   ('liderstvo-vs-menadzment', 'Liderstvo vs menadžment: koja je razlika?', 'Iako se često koriste kao sinonimi, liderstvo i menadžment nisu isto. Otkrijte ključne razlike i zašto je oboje bitno za uspješan tim.', 'Poslovanje', date '2026-06-19',
    '/images/blog/liderstvo-menadzment.jpg', 'Voditelj tima razgovara sa kolegama',
@@ -288,11 +288,11 @@ Biznis plan ne mora biti dugačak da bi bio efikasan – bitno je da jasno odgov
 
 U svakodnevnom govoru, riječi "lider" i "menadžer" se često koriste kao da znače isto. Ipak, u poslovnom kontekstu, ove dvije uloge imaju različit fokus i pristup radu sa ljudima.
 
-## Što radi menadžer?
+## Šta radi menadžer?
 
 Menadžer je fokusiran na organizaciju, planiranje i kontrolu procesa. Njegov zadatak je da osigura da se zadaci obavljaju efikasno, u skladu sa rokovima i budžetom. Menadžment se najčešće oslanja na strukturu, procedure i mjerljive rezultate.
 
-## Što radi lider?
+## Šta radi lider?
 
 Lider je više okrenut prema inspirisanju i motivisanju ljudi. Umjesto da se fokusira isključivo na procese, lider gradi viziju, potiče inovacije i pomaže članovima tima da rastu. Dobar lider zna prepoznati potencijal kod ljudi i usmjeriti ih prema zajedničkom cilju.
 
@@ -308,15 +308,15 @@ Uspješan tim rijetko funkcioniše samo uz dobru organizaciju ili samo uz motiva
 
   ('uvod-u-agile-i-scrum', 'Uvod u agilnu metodologiju i Scrum', 'Osnove Agile metodologije i Scrum okvira – kako timovi rade u sprintovima, ko su ključne uloge i zašto je ovaj pristup toliko popularan u IT industriji.', 'IT & tehnologija', date '2026-06-25',
    '/images/blog/agile-scrum.jpg', 'Scrum ploča sa zadacima na stikerima',
-   $post$## Što je Agile metodologija?
+   $post$## Šta je Agile metodologija?
 
-Agile je pristup upravljanju projektima koji naglašava fleksibilnost, saradnju i postepeno isporučivanje rezultata. Umjesto da se cijeli projekt planira unaprijed do najsitnijeg detalja, rad se dijeli na manje cikluse tokom kojih se tim prilagođava promjenama i povratnim informacijama.
+Agile je pristup upravljanju projektima koji naglašava fleksibilnost, saradnju i postepeno isporučivanje rezultata. Umjesto da se cijeli projekat planira unaprijed do najsitnijeg detalja, rad se dijeli na manje cikluse tokom kojih se tim prilagođava promjenama i povratnim informacijama.
 
 ## Agile manifest ukratko
 
 Agile pristup se zasniva na nekoliko osnovnih vrijednosti: ljudi i interakcija su važniji od procesa i alata, funkcionalan proizvod je važniji od opsežne dokumentacije, saradnja sa klijentom je važnija od pregovaranja oko ugovora, a reagovanje na promjenu je važnije od striktnog praćenja plana.
 
-## Što je Scrum?
+## Šta je Scrum?
 
 Scrum je jedan od najpopularnijih okvira zasnovanih na Agile principima. Rad se odvija u kratkim ciklusima koji se nazivaju **sprintovi**, obično u trajanju od jedne do četiri sedmice. Na kraju svakog sprinta, tim isporučuje funkcionalan dio proizvoda.
 
@@ -330,9 +330,9 @@ Scrum je jedan od najpopularnijih okvira zasnovanih na Agile principima. Rad se 
 
 Ovaj pristup omogućava timovima da brzo reaguju na promjene, redovno dobijaju povratne informacije i izbjegavaju situaciju u kojoj se mjesecima radi na nečemu što na kraju ne odgovara potrebama korisnika. Zbog toga je Agile postao standard u razvoju softvera, ali se sve više primjenjuje i u drugim industrijama.$post$),
 
-  ('sta-je-git', 'Što je Git i zašto ga svaki programer treba znati', 'Git je alat koji koristi gotovo svaki programer na svijetu. Saznajte što je verzionisanje koda, kako Git funkcioniše i zašto je nezaobilazan u IT industriji.', 'Programiranje', date '2026-07-01',
+  ('sta-je-git', 'Šta je Git i zašto ga svaki programer treba znati', 'Git je alat koji koristi gotovo svaki programer na svijetu. Saznajte šta je verzionisanje koda, kako Git funkcioniše i zašto je nezaobilazan u IT industriji.', 'Programiranje', date '2026-07-01',
    '/images/blog/sta-je-git.jpg', 'Programer kuca kod na laptopu',
-   $post$## Što je Git?
+   $post$## Šta je Git?
 
 Git je alat za verzionisanje koda (version control system) koji programerima omogućava da prate promjene u svom kodu tokom vremena. Umjesto da se izmjene čuvaju u više kopija datoteka s različitim imenima, Git bilježi istoriju svake promjene na jednom mjestu.
 
@@ -342,7 +342,7 @@ Kada više ljudi radi na istom projektu, lako može doći do konflikata i izgubl
 
 ## Osnovni pojmovi u Gitu
 
-- **Repository** – mjesto gdje se čuva projekt i njegova istorija
+- **Repository** – mjesto gdje se čuva projekat i njegova istorija
 - **Commit** – snimak određenog stanja koda u određenom trenutku
 - **Branch** – zasebna linija razvoja koja omogućava rad bez uticaja na glavni kod
 - **Merge** – spajanje izmjena iz jedne grane u drugu
@@ -381,9 +381,9 @@ Kada otvorite bilo koju web stranicu, HTML učitava sadržaj, CSS ga stilizuje, 
 
 Za početnike se preporučuje učenje ovim redoslijedom – prvo HTML, zatim CSS, i na kraju JavaScript. Svaki sljedeći korak nadograđuje prethodni, pa je važno dobro razumjeti osnove prije prelaska na složenije koncepte poput funkcija, petlji i rada sa podacima.$post$),
 
-  ('sta-je-cloud-computing', 'Što je cloud computing? Jednostavno objašnjenje', 'Cloud computing je promijenio način na koji koristimo tehnologiju. Saznajte što znači "rad u oblaku" i koje su njegove najveće prednosti.', 'IT & tehnologija', date '2026-07-13',
+  ('sta-je-cloud-computing', 'Šta je cloud computing? Jednostavno objašnjenje', 'Cloud computing je promijenio način na koji koristimo tehnologiju. Saznajte šta znači "rad u oblaku" i koje su njegove najveće prednosti.', 'IT & tehnologija', date '2026-07-13',
    '/images/blog/cloud-computing.jpg', 'Ilustracija servera i oblaka koji predstavlja cloud computing',
-   $post$## Što znači "cloud computing"?
+   $post$## Šta znači "cloud computing"?
 
 Cloud computing (računarstvo u oblaku) označava korišćenje udaljenih servera putem interneta za skladištenje podataka, pokretanje aplikacija i obradu informacija – umjesto da se sve to radi na lokalnom računaru.
 
@@ -405,9 +405,9 @@ Cloud computing omogućava firmama da ne moraju kupovati skupu opremu, jer plać
 
 Cloud computing je osnova modernih poslovnih sistema, pa razumijevanje ovih koncepata pomaže bilo kome ko radi u IT sektoru, ali i ljudima na drugim pozicijama koji svakodnevno koriste cloud alate poput Microsoft 365 ili Google Workspace.$post$),
 
-  ('osnove-kiberneticke-bezbjednosti', 'Osnove kibernetičke bezbjednosti: kako se zaštititi online', 'Jednostavan vodič kroz osnovne pojmove kibernetičke bezbjednosti i praktični savjeti kako zaštititi svoje podatke i naloge na internetu.', 'IT & tehnologija', date '2026-07-19',
+  ('osnove-kiberneticke-bezbjednosti', 'Osnove sajber bezbjednosti: kako se zaštititi online', 'Jednostavan vodič kroz osnovne pojmove sajber bezbjednosti i praktični savjeti kako zaštititi svoje podatke i naloge na internetu.', 'IT & tehnologija', date '2026-07-19',
    '/images/blog/kiberneticka-bezbjednost.jpg', 'Katanac kao simbol digitalne bezbjednosti',
-   $post$## Zašto je kibernetička bezbjednost važna?
+   $post$## Zašto je sajber bezbjednost važna?
 
 Sa sve većom količinom vremena koje provodimo online, zaštita ličnih i poslovnih podataka postala je neophodna vještina, ne samo za IT stručnjake već za sve korisnike interneta.
 
@@ -427,11 +427,11 @@ Phishing poruke često sadrže greške u pravopisu, sumnjive linkove ili traže 
 
 ## Bezbjednost kao svakodnevna navika
 
-Kibernetička bezbjednost ne zahtijeva tehničko obrazovanje – dovoljno je usvojiti nekoliko osnovnih navika i biti oprezan prilikom dijeljenja podataka online. Ove vještine su danas korisne u gotovo svakoj profesiji, s obzirom na to da posao sve više zavisi od digitalnih alata.$post$),
+Sajber bezbjednost ne zahtijeva tehničko obrazovanje – dovoljno je usvojiti nekoliko osnovnih navika i biti oprezan prilikom dijeljenja podataka online. Ove vještine su danas korisne u gotovo svakoj profesiji, s obzirom na to da posao sve više zavisi od digitalnih alata.$post$),
 
-  ('sta-je-api', 'Što je API? Objašnjeno za početnike', 'API je pojam koji se često spominje u IT svijetu. Saznajte što zapravo znači, kako funkcioniše i zašto je ključan dio moderne tehnologije.', 'Programiranje', date '2026-07-25',
+  ('sta-je-api', 'Šta je API? Objašnjeno za početnike', 'API je pojam koji se često spominje u IT svijetu. Saznajte šta zapravo znači, kako funkcioniše i zašto je ključan dio moderne tehnologije.', 'Programiranje', date '2026-07-25',
    '/images/blog/sta-je-api.jpg', 'Ilustracija povezivanja dvije aplikacije putem API-ja',
-   $post$## Što je API?
+   $post$## Šta je API?
 
 API (Application Programming Interface) je skup pravila koja omogućavaju dvjema aplikacijama da međusobno komuniciraju. Zamislite API kao konobara u restoranu – vi (aplikacija) date narudžbu konobaru (API-ju), on je prenese kuhinji (serveru), i vrati vam gotovo jelo (podatke).
 
@@ -441,7 +441,7 @@ Kada koristite aplikaciju za vremensku prognozu koja prikazuje trenutnu temperat
 
 ## Kako API funkcioniše u praksi?
 
-Aplikacija šalje zahtjev (request) prema serveru, navodeći što joj je potrebno. Server obrađuje taj zahtjev i vraća odgovor (response), obično u formatu koji se zove JSON – strukturisan način zapisa podataka koji je lako čitljiv i mašinama i ljudima.
+Aplikacija šalje zahtjev (request) prema serveru, navodeći šta joj je potrebno. Server obrađuje taj zahtjev i vraća odgovor (response), obično u formatu koji se zove JSON – strukturisan način zapisa podataka koji je lako čitljiv i mašinama i ljudima.
 
 ## Zašto su API-ji bitni za razvoj softvera?
 
@@ -497,7 +497,7 @@ Kao i svaka druga vještina, javni govor se poboljšava isključivo kroz praksu.
 
   ('kako-izgraditi-licni-brend', 'Kako izgraditi lični brend online', 'Lični brend nije rezervisan samo za influensere. Saznajte kako izgraditi prepoznatljivo online prisustvo koje otvara poslovne prilike.', 'Poslovanje', date '2026-08-12',
    '/images/blog/licni-brend.jpg', 'Osoba koristi laptop za rad na društvenim mrežama',
-   $post$## Što je lični brend?
+   $post$## Šta je lični brend?
 
 Lični brend predstavlja način na koji vas drugi doživljavaju na osnovu onoga što dijelite, kako komunicirate i koje vrijednosti predstavljate – online i izvan interneta. Ne odnosi se samo na poznate ličnosti, već na svakoga ko želi izgraditi profesionalnu reputaciju.
 
@@ -522,7 +522,7 @@ Izgradnja ličnog brenda nije proces koji se događa preko noći. Potrebno je vr
 
   ('freelancing-101-kako-poceti', 'Freelancing 101: kako početi', 'Sve što trebate znati za početak freelance karijere – od izbora niše i platformi do prvih klijenata i postavljanja cijena.', 'Poslovanje', date '2026-08-18',
    '/images/blog/freelancing.jpg', 'Freelancer radi na laptopu u kafiću',
-   $post$## Što je freelancing?
+   $post$## Šta je freelancing?
 
 Freelancing podrazumijeva rad kao samostalni izvođač usluga, bez stalnog poslodavca. Freelanceri sami biraju klijente, projekte i raspored rada, što ovaj oblik zaposlenja čini privlačnim mnogima koji traže fleksibilnost.
 

@@ -47,11 +47,7 @@ import type { BrandConfig } from '../src/lib/brand/types';
 const REVIEW_HOURS = 48;
 
 export const BRAND: BrandConfig = {
-  // TODO(krugovi): placeholder until the client's domain exists. It is the
-  // canonical origin for SEO (sitemap, canonical links, share cards) on a
-  // production build without NEXT_PUBLIC_SITE_URL, so it must be real before
-  // the site goes live.
-  url: 'https://www.krugovi.ba',
+  url: 'https://www.krugovi.net',
   name: 'Krugovi',
   shortName: 'Krugovi',
   tagline: 'centar za edukaciju i usluge',

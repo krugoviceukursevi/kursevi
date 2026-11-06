@@ -39,7 +39,7 @@
 
 update public.legal_documents
 set content = btrim($privacy$
-Ova politika privatnosti objašnjava kako platforma {{site.name}} (u daljnjem tekstu: „Platforma”), dostupna na adresi [{{site.host}}]({{site.url}}), prikuplja, koristi i štiti tvoje lične podatke.
+{{site.name}} je centar za edukaciju i usluge: organizujemo kurseve uživo, nudimo online kurseve na platformi za učenje i pružamo računovodstvene, administrativne i savjetodavne usluge. Ova politika privatnosti objašnjava kako na sajtu i platformi dostupnim na adresi [{{site.host}}]({{site.url}}) (u daljem tekstu: „Platforma”) prikupljamo, koristimo i štitimo tvoje lične podatke.
 
 ## 1. Kontrolor podataka
 
@@ -89,7 +89,8 @@ Uplata se vrši bankovnim transferom, izvan Platforme. Ne prikupljamo i ne čuva
 
 - zahtjevi za podršku i poruke u njima,
 - poruke poslate putem kontakt forme (ime i prezime, email adresa, tema i sadržaj poruke),
-- tvoje podešavanja: obavještenja, prijava na newsletter i izabrana tema prikaza.
+- prijave na kurseve uživo poslate putem forme na sajtu (ime i prezime, email adresa, broj telefona, izabrani kurs, broj polaznika, naziv kompanije i napomena, ako ih navedeš),
+- tvoja podešavanja: obavještenja, prijava na newsletter i izabrana tema prikaza.
 
 ### f) Tehnički podaci
 
@@ -104,6 +105,7 @@ Tvoje podatke koristimo isključivo za:
 - omogućavanje pristupa kursevima i edukativnim materijalima,
 - praćenje napretka, pregled zadataka i izdavanje sertifikata,
 - slanje obavještenja vezanih za kurseve kojima imaš pristup,
+- obradu prijava na kurseve uživo i dogovor o terminu,
 - odgovaranje na upite i zahtjeve za podršku,
 - slanje newslettera, ako si se na njega prijavio/la,
 - održavanje bezbjednosti i ispravnog funkcionisanja Platforme.
@@ -113,11 +115,11 @@ Pravni osnov za obradu je:
 - **izvršavanje ugovora** — podaci bez kojih ti ne možemo pružiti uslugu (nalog, kursevi, sertifikati, podrška),
 - **saglasnost** — za newsletter; saglasnost možeš povući u svakom trenutku u podešavanjima naloga,
 - **legitimni interes** — bezbjednost Platforme i sprječavanje zloupotrebe,
-- **zakonska obaveza** — podaci koje smo dužni čuvati prema računovodstvenim i poreznim propisima.
+- **zakonska obaveza** — podaci koje smo dužni čuvati prema računovodstvenim i poreskim propisima.
 
-## 4. Korišćenje podataka dobivenih od Google-a
+## 4. Korišćenje podataka dobijenih od Google-a
 
-Podaci dobiveni putem Google prijave koriste se isključivo za tvoju identifikaciju i prijavu na Platformu. Ovi podaci se ne prodaju, ne iznajmljuju, ne koriste u reklamne svrhe i ne dijele s trećim stranama, osim kada je to neophodno za rad Platforme ili zakonski obavezno. Korišćenje ovih podataka u skladu je s [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), uključujući zahtjeve ograničene upotrebe (Limited Use).
+Podaci dobijeni putem Google prijave koriste se isključivo za tvoju identifikaciju i prijavu na Platformu. Ovi podaci se ne prodaju, ne iznajmljuju, ne koriste u reklamne svrhe i ne dijele s trećim stranama, osim kada je to neophodno za rad Platforme ili zakonski obavezno. Korišćenje ovih podataka u skladu je s [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), uključujući zahtjeve ograničene upotrebe (Limited Use).
 
 ## 5. Ko vidi tvoje podatke
 
@@ -133,26 +135,26 @@ Tvoje podatke ne prodajemo niti ustupamo trećim stranama u komercijalne svrhe.
 **Izvan Platforme** podaci su dostupni samo:
 
 - pružaocima tehničkih usluga koji rade u naše ime i obavezani su na povjerljivost:
-  - **Supabase** — baza podataka, prijava korisnika i pohrana datoteka,
+  - **Supabase** — baza podataka, prijava korisnika i skladištenje datoteka,
   - **Vercel** — hosting Platforme,
   - **Resend** — slanje emailova,
   - **Google** — prijava putem Google naloga, ako je koristiš, i prikaz videozapisa putem YouTube-a,
 - nadležnim organima, kada to zahtijeva zakon.
 
-Neki od ovih pružalaca podatke obrađuju izvan Bosne i Hercegovine, u Europskoj uniji ili Sjedinjenim Američkim Državama. Takav prijenos vršimo samo uz zaštitne mjere koje propisuje zakon.
+Neki od ovih pružalaca podatke obrađuju izvan Bosne i Hercegovine, u Evropskoj uniji ili Sjedinjenim Američkim Državama. Takav prenos vršimo samo uz zaštitne mjere koje propisuje zakon.
 
 ## 6. Čuvanje podataka
 
 Podatke čuvamo dok je tvoj nalog aktivan ili dok je to potrebno za svrhe navedene u ovoj politici. Nalog ne možeš obrisati sam/a: brisanje zatraži emailom na [{{contact.email}}](mailto:{{contact.email}}). Nakon brisanja naloga tvoji lični podaci se brišu u roku od 30 dana, osim onih koje smo po zakonu dužni čuvati duže.
 
-Poruke poslate putem kontakt forme čuvamo dok je to potrebno da bismo odgovorili na upit.
+Poruke poslate putem kontakt forme i prijave na kurseve uživo čuvamo dok je to potrebno da bismo odgovorili na upit, odnosno organizovali kurs.
 
-## 7. Kolačići i lokalna pohrana
+## 7. Kolačići i lokalno skladište
 
 Platforma koristi:
 
 - neophodne kolačiće za održavanje tvoje prijave (sesije) i ispravan rad stranice,
-- lokalnu pohranu pregledača (localStorage) za pamćenje izabrane teme prikaza.
+- lokalno skladište pregledača (localStorage) za pamćenje izabrane teme prikaza.
 
 Ne koristimo kolačiće za reklamiranje niti za praćenje.
 
@@ -160,14 +162,14 @@ Videozapisi u kursevima prikazuju se putem YouTube-a, u režimu proširene priva
 
 ## 8. Bezbjednost
 
-Primjenjujemo odgovarajuće tehničke i organizacijske mjere zaštite, uključujući šifriranu vezu (HTTPS), čuvanje lozinki isključivo u hashiranom obliku i ograničen pristup podacima, kako bismo zaštitili tvoje podatke od neovlaštenog pristupa, gubitka ili zloupotrebe.
+Primjenjujemo odgovarajuće tehničke i organizacione mjere zaštite, uključujući šifrovanu vezu (HTTPS), čuvanje lozinki isključivo u hashiranom obliku i ograničen pristup podacima, kako bismo zaštitili tvoje podatke od neovlašćenog pristupa, gubitka ili zloupotrebe.
 
 ## 9. Tvoja prava
 
 U skladu sa Zakonom o zaštiti ličnih podataka Bosne i Hercegovine, imaš pravo:
 
 - zatražiti uvid u lične podatke koje čuvamo o tebi,
-- zatražiti ispravak netačnih podataka,
+- zatražiti ispravku netačnih podataka,
 - zatražiti brisanje svojih podataka i naloga,
 - povući saglasnost za obradu podataka, na primjer odjavom s newslettera,
 - uložiti prigovor na obradu koja se zasniva na legitimnom interesu.
@@ -192,7 +194,9 @@ where slug = 'privacy' and content = '';
 
 update public.legal_documents
 set content = btrim($terms$
-Ovi uslovi korišćenja (u daljnjem tekstu: „Uslovi”) uređuju korišćenje platforme {{site.name}} (u daljnjem tekstu: „Platforma”), dostupne na adresi [{{site.host}}]({{site.url}}).
+Ovi uslovi korišćenja (u daljem tekstu: „Uslovi”) uređuju korišćenje platforme za online kurseve centra za edukaciju i usluge {{site.name}} (u daljem tekstu: „Platforma”), dostupne na adresi [{{site.host}}]({{site.url}}).
+
+Kursevi uživo, iznajmljivanje učionica te računovodstvene, administrativne i savjetodavne usluge nisu dio Platforme: za njih se uslovi dogovaraju posebno, nakon prijave ili upita.
 
 Otvaranjem naloga potvrđuješ da si pročitao/la i prihvatio/la ove Uslove i [Politiku privatnosti](/politika-privatnosti). Ako se s njima ne slažeš, nemoj otvarati nalog niti slati zahtjeve za pristup kursevima.
 
@@ -263,7 +267,7 @@ Na Platformi nije dozvoljeno:
 - predavati tuđi rad kao svoj,
 - postavljati zlonamjerne, nezakonite ili uvredljive sadržaje, uključujući priloge uz zadatke i poruke,
 - vrijeđati ili uznemiravati predavače, administratore i druge korisnike,
-- pokušavati neovlašteno pristupiti dijelovima Platforme ili tuđim podacima.
+- pokušavati neovlašćeno pristupiti dijelovima Platforme ili tuđim podacima.
 
 Ako prekršiš ova pravila, možemo deaktivirati tvoj nalog.
 
@@ -285,7 +289,7 @@ Pitanja i probleme možeš nam poslati kao zahtjev za podršku unutar Platforme 
 
 ## 12. Dostupnost i odgovornost
 
-Trudimo se da Platforma radi bez prekida, ali ne možemo garantirati da će uvijek biti dostupna i bez grešaka; povremeno može biti nedostupna zbog održavanja ili tehničkih problema.
+Trudimo se da Platforma radi bez prekida, ali ne možemo garantovati da će uvijek biti dostupna i bez grešaka; povremeno može biti nedostupna zbog održavanja ili tehničkih problema.
 
 U mjeri u kojoj to zakon dozvoljava, ne odgovaramo za posrednu štetu nastalu korišćenjem Platforme. Ništa u ovim Uslovima ne ograničava prava koja ti kao potrošaču pripadaju po zakonu.
 
