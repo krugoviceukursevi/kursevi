@@ -164,27 +164,40 @@ proven you own.
 1. Sign up at [resend.com](https://resend.com).
 2. **Domains → Add Domain** → `example.ba`.
 3. **Region:** **EU (Ireland)**.
-4. Resend shows about three records. **Leave that page open.**
+4. Resend shows the records it needs. **Leave that page open.**
+
+**"is in use by another Resend team"** means the domain was added in some other Resend
+account (often an earlier attempt of your own). Resend then first asks for one
+`resend-domain-verification=…` TXT record **on the domain itself** (empty Name in
+Vercel, next to ImprovMX's SPF — two TXT records on one name are fine). Verifying it
+moves the domain into your team. Safe as long as that other team never had the domain
+verified and sending.
 
 ### 2.2 Add the records
 
-Roughly (copy the real ones from Resend):
+Roughly (copy the real ones from Resend — the layout has changed before):
 
-| Type | Name                | Value (example)                         | Priority |
-| ---- | ------------------- | --------------------------------------- | -------- |
-| TXT  | `resend._domainkey` | `p=MIGfMA0GCSq…` (long key)             |          |
-| MX   | `send`              | `feedback-smtp.eu-west-1.amazonses.com` | 10       |
-| TXT  | `send`              | `v=spf1 include:amazonses.com ~all`     |          |
+| Type  | Name                | Value (example)                            |
+| ----- | ------------------- | ------------------------------------------ |
+| TXT   | `resend._domainkey` | `p=MIGfMA0GCSq…` (long key, ends `IDAQAB`) |
+| CNAME | `send`              | `send.forge.rmta.net`                      |
+| CNAME | `rsend`             | `rsend-euw1.forge.rmta.net`                |
 
-These sit on `send` and `resend._domainkey`, **not** on the domain itself, so they don't interfere with
-ImprovMX's records from Part 1. In particular the `send` MX only handles bounces for
-Resend; it doesn't receive your mail.
+Older Resend setups asked for an MX + TXT on `send` instead of the two CNAMEs. **A CNAME
+cannot share a name with any other record**, so if `send` already has an MX or TXT from
+an earlier attempt, delete them before adding the CNAME. Vercel warns that a record on
+`resend._domainkey` / `send` / `rsend` "overrides the wildcard" — confirm; it only stops
+the website's `*` record answering for those names, which never serve a website.
+
+These sit on `send`, `rsend` and `resend._domainkey`, **not** on the domain itself, so they
+don't interfere with ImprovMX's records from Part 1. They only handle Resend's bounces;
+they don't receive your mail.
 
 ### 2.3 Verify
 
 Resend → **Verify DNS Records**. Wait until the domain shows **Verified**.
 
-### 2.4 Create two API keys
+### 2.4 Create three API keys
 
 Resend → **API Keys → Create API Key**, three times. All with **Sending access**, domain
 `example.ba`:
@@ -331,7 +344,7 @@ Limits change; check both pricing pages when you sign up.
 - [ ] ImprovMX: catch-all `*` deleted; `info` and `podrska` → Gmail
 - [ ] Test mail to `info@` and `podrska@` from another account arrives in Gmail
 - [ ] Test mail to a made-up address bounces
-- [ ] Resend: domain **Verified**, two API keys created and saved
+- [ ] Resend: domain **Verified**, three API keys created and saved
 - [ ] Gmail: `info@` and `podrska@` added under Send mail as, both confirmed
 - [ ] Gmail: "Reply from the same address the message was sent to"
 - [ ] `_dmarc` record added
@@ -345,6 +358,7 @@ Limits change; check both pricing pages when you sign up.
 | Your own test from Gmail to `info@` never shows up    | Normal: Gmail hides its own mail coming back. Test from another account.                                                         |
 | Some mail arrives, some doesn't                       | A leftover MX record (empty name) in Vercel besides ImprovMX's two. Delete it.                                                   |
 | ImprovMX or Resend never turns green / Verified       | Name typed with the domain doubled (`send.example.ba.example.ba`), or records added at the registrar instead of Vercel (Part 0). |
+| Resend's SPF stays pending                            | An old MX/TXT on `send` is blocking the `send` CNAME, or `rsend` is missing (Part 2.2).                                          |
 | Mail to a made-up address arrives instead of bouncing | The ImprovMX catch-all `*` alias still exists.                                                                                   |
 | Forwarded mail lands in Gmail spam                    | Mark **Not spam** and add the "Never send it to Spam" filter (Part 1.3).                                                         |
 | Gmail Send mail as says authentication failed         | Username must be the word `resend`; password is the API key, not your Resend login password.                                     |

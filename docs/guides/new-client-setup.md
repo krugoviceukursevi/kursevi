@@ -278,7 +278,8 @@ default assumes the built-in mailer.
    - Home page: `https://www.<domain>`
    - Privacy policy: `https://www.<domain>/politika-privatnosti`
    - Terms of service: `https://www.<domain>/uslovi-koriscenja`
-   - Authorised domains: `<domain>` and `supabase.co`
+   - Authorised domains: `<domain>` only. (`supabase.co` is refused — it is a public
+     suffix — and is not needed: the button hands the ID token to Supabase directly.)
 4. **Audience → Publish app** (moves it out of "Testing", where only listed test users can sign in).
 5. **Clients → Create client** → **Web application**:
    - **Authorised JavaScript origins:**
@@ -286,8 +287,11 @@ default assumes the built-in mailer.
      - `https://<domain>`
      - `http://localhost:3000`
      - `http://localhost`
-   - **Authorised redirect URIs:** `https://<ref>.supabase.co/auth/v1/callback`
-6. Copy the **Client ID** and **Client secret**.
+   - **Authorised redirect URIs:** optional — `https://<ref>.supabase.co/auth/v1/callback`
+     if Google accepts it. The ID-token flow this app uses never redirects.
+6. Copy the **Client ID** (ends in `.apps.googleusercontent.com`) and the **Client secret**
+   (starts `GOCSPX-`). Only the ID goes in `NEXT_PUBLIC_GOOGLE_CLIENT_ID`; anything
+   `NEXT_PUBLIC_` is shipped to every browser, so the secret goes only into Supabase.
 
 The button uses Google's own popup, which names _your_ domain rather than Supabase's. The flip
 side: it only appears on origins listed in step 5, so Vercel preview deployments show no Google

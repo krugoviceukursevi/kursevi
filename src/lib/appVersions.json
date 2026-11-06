@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-06T12:27:12.306Z",
+  "updatedAt": "2026-11-06T19:01:37.016Z",
   "sections": {
     "database": {
       "label": "Baza podataka",
       "description": "Shema, RLS politike, okidači i migracije",
       "frontend": null,
       "backend": {
-        "version": "1.13.1",
-        "updatedAt": "2026-11-06T08:06:57.486Z"
+        "version": "1.13.2",
+        "updatedAt": "2026-11-06T19:01:37.016Z"
       }
     },
     "quizzes": {
@@ -170,8 +170,8 @@
       "label": "Jezgro",
       "description": "Zajedničke komponente, tema, rasporedi i infrastruktura",
       "frontend": {
-        "version": "1.21.1",
-        "updatedAt": "2026-11-06T08:06:57.486Z"
+        "version": "1.21.2",
+        "updatedAt": "2026-11-06T19:01:37.016Z"
       },
       "backend": {
         "version": "1.9.1",
@@ -180,6 +180,22 @@
     }
   },
   "history": [
+    {
+      "at": "2026-11-06T19:01:37.016Z",
+      "section": "core",
+      "layer": "frontend",
+      "from": "1.21.1",
+      "to": "1.21.2",
+      "files": 1
+    },
+    {
+      "at": "2026-11-06T19:01:37.016Z",
+      "section": "database",
+      "layer": "backend",
+      "from": "1.13.1",
+      "to": "1.13.2",
+      "files": 1
+    },
     {
       "at": "2026-11-06T12:27:12.306Z",
       "section": "core",
@@ -963,22 +979,6 @@
       "from": "1.0.4",
       "to": "1.0.5",
       "files": 1
-    },
-    {
-      "at": "2026-10-19T12:31:23.115Z",
-      "section": "tasks",
-      "layer": "backend",
-      "from": "1.2.1",
-      "to": "1.2.2",
-      "files": 3
-    },
-    {
-      "at": "2026-10-19T12:31:23.115Z",
-      "section": "notifications",
-      "layer": "backend",
-      "from": "1.1.4",
-      "to": "1.1.5",
-      "files": 2
     }
   ]
 }

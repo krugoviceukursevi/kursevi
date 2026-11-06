@@ -72,7 +72,9 @@ export const BRAND: BrandConfig = {
   },
 
   contact: {
-    email: 'krugovi.ceu@gmail.com',
+    // An ImprovMX alias that forwards to the centre's Gmail (see
+    // docs/guides/email-setup.md), so the inbox can change without a deploy.
+    email: 'info@krugovi.net',
     phone: { display: '+387 65 947 229', tel: '+38765947229' },
     // TODO(krugovi): carried over from the previous client — confirm.
     hours: 'Ponedjeljak – petak, 09:00 – 17:00',
