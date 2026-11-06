@@ -2639,7 +2639,7 @@ course-scoped page, add it there or it is URL-only.
   inside Fragments.
 
 - **`brand/config.ts` has no placeholders left.** Hours 08–16, reply "u roku od 24 sata",
-  and `company.legalName` is plain "Krugovi" at the client's word. `contact.email` is
+  and `company.legalName` is "Krugovi360" — the registered entity and bank account holder; the brand stays "Krugovi". `contact.email` is
   `info@krugovi.net`, an ImprovMX alias forwarding to the centre's Gmail, so the inbox can
   change without a deploy. `hero.jpg` is the client's own (abstract circles), used only on
   `/online-kursevi`; the home page draws its circles in CSS.

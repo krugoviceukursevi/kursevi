@@ -100,9 +100,10 @@ export const BRAND: BrandConfig = {
 
   /* Must match the controller named in the privacy policy and the terms. */
   company: {
-    // The data controller in the privacy policy. Confirmed by the client as
-    // plain "Krugovi" (November 2026).
-    legalName: 'Krugovi',
+    // The registered entity: the data controller in the privacy policy, and
+    // the account holder on the bank details (payment_settings.seller_name).
+    // The brand stays "Krugovi" (`name` above); only legal lines use this.
+    legalName: 'Krugovi360',
     address: 'Miloša Obilića 78, 76300 Bijeljina',
     idNumber: '',
   },
