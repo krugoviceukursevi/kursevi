@@ -1,0 +1,13 @@
+/*
+ * MUI's <CssBaseline /> owns the reset (margins, box-sizing, typography), so
+ * this file stays minimal to avoid fighting it. Add global, non-MUI styles
+ * here only when a theme override genuinely can't express them.
+ */
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
