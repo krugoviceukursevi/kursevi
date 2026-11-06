@@ -35,8 +35,8 @@ export default function ContactPage() {
           Pitaj nas prije nego se upišeš
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          Odgovaramo radnim danima, u pravilu {SITE.service.replyTime}. Za pitanja o pojedinoj kursu
-          navedi njen naziv, kako bismo ti brže odgovorili.
+          Odgovaramo radnim danima, u pravilu {SITE.service.replyTime}. Za pitanja o pojedinom kursu
+          navedi njegov naziv, kako bismo ti brže odgovorili.
         </Typography>
       </Stack>
 

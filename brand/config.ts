@@ -76,13 +76,11 @@ export const BRAND: BrandConfig = {
     // docs/guides/email-setup.md), so the inbox can change without a deploy.
     email: 'info@krugovi.net',
     phone: { display: '+387 65 947 229', tel: '+38765947229' },
-    // TODO(krugovi): carried over from the previous client — confirm.
-    hours: 'Ponedjeljak – petak, 09:00 – 17:00',
+    hours: 'Ponedjeljak – petak, 08:00 – 16:00',
   },
 
   service: {
-    // TODO(krugovi): carried over from the previous client — confirm.
-    replyTime: 'u toku istog dana',
+    replyTime: 'u roku od 24 sata',
     reviewHours: REVIEW_HOURS,
   },
 
@@ -102,8 +100,8 @@ export const BRAND: BrandConfig = {
 
   /* Must match the controller named in the privacy policy and the terms. */
   company: {
-    // TODO(krugovi): the registered name of the legal entity (as on the JIB
-    // certificate) — it is the data controller in the privacy policy.
+    // The data controller in the privacy policy. Confirmed by the client as
+    // plain "Krugovi" (November 2026).
     legalName: 'Krugovi',
     address: 'Miloša Obilića 78, 76300 Bijeljina',
     idNumber: '',

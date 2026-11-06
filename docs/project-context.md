@@ -2638,11 +2638,11 @@ course-scoped page, add it there or it is URL-only.
   first option of each run. Children are a flat array because MUI's Select does not look
   inside Fragments.
 
-- **Placeholders still in `brand/config.ts`, marked `TODO(krugovi)`:**
-  `contact.hours` and `service.replyTime` (carried over from Edubox), and
-  `company.legalName` (set to "Krugovi"; must be the registered name, as it is the data
-  controller in the privacy policy). `hero.jpg` is the client's own (abstract circles), used
-  only on `/online-kursevi`; the home page draws its circles in CSS.
+- **`brand/config.ts` has no placeholders left.** Hours 08–16, reply "u roku od 24 sata",
+  and `company.legalName` is plain "Krugovi" at the client's word. `contact.email` is
+  `info@krugovi.net`, an ImprovMX alias forwarding to the centre's Gmail, so the inbox can
+  change without a deploy. `hero.jpg` is the client's own (abstract circles), used only on
+  `/online-kursevi`; the home page draws its circles in CSS.
 
 - **No ID number is shown.** `company.idNumber` is `''` at the client's request, and every
   reader already skips an empty one (footer, emails, the Supabase template). The starting
